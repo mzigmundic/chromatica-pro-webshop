@@ -1,0 +1,237 @@
+:root {
+	--boja1: #2c3e50;
+	--boja2: #2980b9;
+	--boja3: #ecf0f1;
+	--boja4: #2ecc71;
+
+	--baner-bg: url(../slike/baner/back.png);
+	--baner-tekst: url(../slike/baner/tekst8.png);
+	--baner-ispred-el: url(../slike/baner/is.png);
+	--baner-iza-el: url(../slike/baner/iz.png);
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+
+body {
+	padding-top: 50px;
+	background-color: var(--boja3);
+	font-family: Verdana, Geneva, sans-serif;
+	height: 100%;
+}
+
+
+hr {
+	border: 1px solid grey;
+}
+
+#kont {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 200px;
+}
+
+
+/* === BANER === */
+#baner-wrapper {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 600px;
+	background-image: var(--baner-bg);
+	background-repeat: no-repeat;
+	background-size: 100% 700px;
+	background-position: top center;
+	background-attachment: fixed;
+	border-bottom: 1px solid #333333;
+}
+
+#logotekst {
+	position: absolute;
+	width: 100%;
+	height: 180px;
+	background-image: var(--baner-tekst);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% 180px;
+	top: 50%;
+	margin-top: -90px;
+}
+
+#ispred-element {
+	position: absolute;
+	width: 100%;
+	height: 800px;
+	background-image: var(--baner-ispred-el);
+	background-size: auto 800px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	top: 300px;
+	right: -40px;
+}
+
+#iza-element {
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	background-image: var(--baner-iza-el);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: auto 500px;
+	top: 300px;
+	left: -5px;
+}
+
+
+
+
+#dio-baner-wrapper {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 210px;
+	background-image: var(--baner-bg);
+	background-repeat: no-repeat;
+	background-size: 100% 700px;
+	background-position: top center;
+	background-attachment: fixed;
+	border-bottom: 1px solid #333333;
+}
+
+#dio-logotekst {
+	position: absolute;
+	width: 100%;
+	height: 180px;
+	background-image: var(--baner-tekst);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 70% 180px;
+	top: 50%;
+	margin-top: -90px;
+}
+
+#dio-ispred-element {
+	position: absolute;
+	width: 100%;
+	height: 450px;
+	background-image: var(--baner-ispred-el);
+	background-size: auto 450px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	top: 20px;
+	right: -20px;
+}
+
+#dio-iza-element {
+	position: absolute;
+	width: 100%;
+	height: 350px;
+	background-image: var(--baner-iza-el);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: auto 350px;
+	top: 25px;
+	left: -5px;
+}
+
+
+.proizvod-thumb {
+	margin-top: 50px;
+}
+
+
+.slika-thumb {
+	width: auto;
+	height: 250px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.slika-thumb:hover {
+	opacity: 0.8;
+}
+
+.cijena {
+	font-size: 22px;
+}
+
+#podnozje {
+	display: flex;
+	background-color: rgb(34, 34, 34);
+	width: 100%;
+	height: 100px;
+	margin-top: 300px;
+	color: rgb(157, 157, 157);
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+}
+
+fotorama__wrap {
+	width: 90%;
+	margin: 15px auto;
+}
+
+.tablica-admin {
+	width: auto;
+	margin: auto;
+}
+
+#dodaj-proizvod-gumb {
+	margin-top: -40px;
+}
+
+.spremljena-slika {
+	text-align: center;
+}
+
+.spremljena-slika img{
+	width: auto;
+	height: 150px;
+}
+
+#login-forma {
+	width: 50%;
+	height: 60%;
+	border: 2px solid #000;
+	border-radius: 15px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.6);
+	margin: 7% auto;
+	padding: 15px;
+	background-color: #fff;
+}
+
+
+.tablica-head th {
+	text-align: center;
+}
+
+#kosarica-programcic td, #popularni-proizvodi td {
+	font-size: 12px;
+}
+
+input.cijena-rang {
+	width: 90px;
+	text-align: center;
+	border: 1px solid var(--boja1);
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.kos-nav {
+	font-size: 26px;
+	height: 50px;
+}
+
+a:hover.popularni-link {
+	cursor: pointer;
+	text-decoration: none;
+}
